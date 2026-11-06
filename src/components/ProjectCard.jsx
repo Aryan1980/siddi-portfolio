@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Play, X, Maximize2, ExternalLink, Film, Volume2 } from 'lucide-react';
+import { Play, X, Film } from 'lucide-react';
 
 export default function ProjectCard({ project, isActive, onPlay, onClose, index }) {
   const [isLoading, setIsLoading] = useState(false);
-  const [imageLoaded, setImageLoaded] = useState(false);
 
-  // When this video becomes active, set loading state until iframe triggers or brief transition
+  // When this video becomes active, set loading state until iframe triggers
   useEffect(() => {
     if (isActive) {
       setIsLoading(true);
@@ -95,28 +94,32 @@ export default function ProjectCard({ project, isActive, onPlay, onClose, index 
             }}
             aria-label={`Play ${project.title}`}
           >
-            {/* Blurred placeholder backdrop while image loads */}
-            <div className="absolute inset-0 bg-neutral-950 flex items-center justify-center">
-              <Film className="w-10 h-10 text-neutral-800 animate-pulse" />
+            {/* Dark background placeholder */}
+            <div className="absolute inset-0 bg-neutral-950 flex items-center justify-center pointer-events-none">
+              <Film className="w-10 h-10 text-neutral-900" />
             </div>
 
-            {/* Thumbnail Image */}
-            <img
-              src={project.thumbnail}
-              alt={project.title}
-              loading="lazy"
-              onLoad={() => setImageLoaded(true)}
-              className={`w-full h-full object-cover object-center transition-all duration-700 ease-out ${
-                imageLoaded ? 'opacity-100' : 'opacity-0'
-              } group-hover/thumb:scale-[1.025] group-hover/thumb:brightness-105`}
-            />
+            {/* High Performance WebP/JPG Picture */}
+            <picture className="w-full h-full block relative z-[1]">
+              {project.thumbnailWebp && (
+                <source srcSet={project.thumbnailWebp} type="image/webp" />
+              )}
+              <img
+                src={project.thumbnailFallback || project.thumbnail}
+                alt={project.title}
+                loading={index < 2 ? "eager" : "lazy"}
+                decoding="async"
+                fetchPriority={index === 0 ? "high" : "auto"}
+                className="w-full h-full object-cover object-center transition-all duration-700 ease-out group-hover/thumb:scale-[1.025] group-hover/thumb:brightness-105"
+              />
+            </picture>
 
             {/* Subtle Gradient Overlays for Cinematic Depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-60 group-hover/thumb:opacity-40 transition-opacity duration-300" />
-            <div className="absolute inset-0 bg-black/20 group-hover/thumb:bg-black/0 transition-colors duration-300" />
+            <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-60 group-hover/thumb:opacity-40 transition-opacity duration-300 pointer-events-none" />
+            <div className="absolute inset-0 z-[2] bg-black/20 group-hover/thumb:bg-black/0 transition-colors duration-300 pointer-events-none" />
 
             {/* Play Button Indicator - Center Hover Experience */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 z-[3] flex items-center justify-center pointer-events-none">
               <div className="flex items-center gap-3 px-5 py-2.5 rounded-full bg-black/75 backdrop-blur-md border border-white/20 text-white shadow-2xl transition-all duration-300 transform scale-95 group-hover/thumb:scale-100 group-hover/thumb:border-white/50 group-hover/thumb:bg-black/90">
                 <div className="w-6 h-6 rounded-full bg-white text-black flex items-center justify-center shadow-md">
                   <Play className="w-3.5 h-3.5 fill-current ml-0.5 text-black" />
@@ -128,14 +131,14 @@ export default function ProjectCard({ project, isActive, onPlay, onClose, index 
             </div>
 
             {/* Bottom-left Category Tag Overlay */}
-            <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2">
+            <div className="absolute bottom-4 left-4 z-[3] flex items-center gap-2 pointer-events-none">
               <span className="px-2.5 py-1 rounded bg-black/70 backdrop-blur-sm border border-neutral-800 text-[11px] font-mono uppercase tracking-wider text-neutral-300">
                 {project.category}
               </span>
             </div>
 
             {/* Bottom-right Aspect Indicator */}
-            <div className="absolute bottom-4 right-4 z-10 flex items-center gap-2">
+            <div className="absolute bottom-4 right-4 z-[3] flex items-center gap-2 pointer-events-none">
               <span className="px-2.5 py-1 rounded bg-black/70 backdrop-blur-sm border border-neutral-800 text-[11px] font-mono tracking-wider text-neutral-400">
                 {project.duration}
               </span>
@@ -144,7 +147,7 @@ export default function ProjectCard({ project, isActive, onPlay, onClose, index 
         )}
       </div>
 
-      {/* Metadata & Editorial Details Underneath (Brian Yoo style 2-column layout) */}
+      {/* Metadata & Editorial Details Underneath */}
       <div className="mt-6 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
         {/* Left Column (Cols 1-5): Title, Year, Client, Action */}
         <div className="md:col-span-5 space-y-2">

@@ -34,10 +34,10 @@ A production-ready, minimalist, and cinematic video portfolio website built for 
 
 | # | Project Title | Year | Category | Thumbnail | Embed Link |
 |---|---------------|------|----------|-----------|------------|
-| 1 | **PSP Spec Ad** | 2025 | Spec Commercial | `/thumbnails/psp-spec-ad.jpg` | [Preview](https://drive.google.com/file/d/1RvQrl3NK1TKEs98y9mal5JV5t-PORTJ2/preview) |
-| 2 | **Showreel 2025–26** | 2025–2026 | Showreel | `/thumbnails/showreel-2025-26.png` | [Preview](https://drive.google.com/file/d/1piSHy_AxPPvFcskPrgz0IUZmGgbTGptZ/preview) |
-| 3 | **Spider Noir** | 2025 | Narrative Short | `/thumbnails/spider-noir.png` | [Preview](https://drive.google.com/file/d/1PwlJukxgLqN-vkPkrNi5eoHXEMfGP66U/preview) |
-| 4 | **Nothing Spec Ad** | 2025 | Brand Commercial | `/thumbnails/nothing-spec-ad.png` | [Preview](https://drive.google.com/file/d/177hu5h1ZoYqXAD_vDFq1NOBU9LOuy3pG/preview) |
+| 1 | **PSP Spec Ad** | 2025 | Spec Commercial | `/thumbnails/psp-spec-ad.webp` | [Preview](https://drive.google.com/file/d/1RvQrl3NK1TKEs98y9mal5JV5t-PORTJ2/preview) |
+| 2 | **Showreel 2025–26** | 2025–2026 | Showreel | `/thumbnails/showreel-2025-26.webp` | [Preview](https://drive.google.com/file/d/1piSHy_AxPPvFcskPrgz0IUZmGgbTGptZ/preview) |
+| 3 | **Spider Noir** | 2025 | Narrative Short | `/thumbnails/spider-noir.webp` | [Preview](https://drive.google.com/file/d/1PwlJukxgLqN-vkPkrNi5eoHXEMfGP66U/preview) |
+| 4 | **Nothing Spec Ad** | 2025 | Brand Commercial | `/thumbnails/nothing-spec-ad.webp` | [Preview](https://drive.google.com/file/d/177hu5h1ZoYqXAD_vDFq1NOBU9LOuy3pG/preview) |
 
 ---
 
