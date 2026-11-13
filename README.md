@@ -1,6 +1,6 @@
-# Siddarth Mohan — Cinematic Filmmaker & Video Editor Portfolio
+# Siddharth Mohan — Cinematic Filmmaker & Video Editor Portfolio
 
-A production-ready, minimalist, and cinematic video portfolio website built for **Siddarth Mohan**, inspired by the design language, typography, and browsing experience of [brianyebtrsi.com](https://brianyebtrsi.com/).
+A production-ready, minimalist, and cinematic video portfolio website built for **Siddharth Mohan**, inspired by the design language, typography, and browsing experience of [brianyebtrsi.com](https://brianyebtrsi.com/).
 
 ---
 
@@ -9,7 +9,7 @@ A production-ready, minimalist, and cinematic video portfolio website built for 
 - **Cinematic & Minimalist Visual Identity**:
   - Deep dark charcoal & true black palette (`#070707`)
   - Subtle analog film-grain texture overlay
-  - Editorial typography pairing Grotesque sans-serif with high-precision monospaced metadata
+  - Pure **OCR-A** monospace typography across the entire layout
   - Hairline dividers and structured 2-column project information
   - Live Indian Standard Time (IST) studio clock ticker
 
@@ -34,10 +34,10 @@ A production-ready, minimalist, and cinematic video portfolio website built for 
 
 | # | Project Title | Year | Category | Thumbnail | Embed Link |
 |---|---------------|------|----------|-----------|------------|
-| 1 | **PSP Spec Ad** | 2025 | Spec Commercial | `/thumbnails/psp-spec-ad.webp` | [Preview](https://drive.google.com/file/d/1RvQrl3NK1TKEs98y9mal5JV5t-PORTJ2/preview) |
-| 2 | **Showreel 2025–26** | 2025–2026 | Showreel | `/thumbnails/showreel-2025-26.webp` | [Preview](https://drive.google.com/file/d/1piSHy_AxPPvFcskPrgz0IUZmGgbTGptZ/preview) |
-| 3 | **Spider Noir** | 2025 | Narrative Short | `/thumbnails/spider-noir.webp` | [Preview](https://drive.google.com/file/d/1PwlJukxgLqN-vkPkrNi5eoHXEMfGP66U/preview) |
-| 4 | **Nothing Spec Ad** | 2025 | Brand Commercial | `/thumbnails/nothing-spec-ad.webp` | [Preview](https://drive.google.com/file/d/177hu5h1ZoYqXAD_vDFq1NOBU9LOuy3pG/preview) |
+| 1 | **PSP Spec Ad** | 2026 | Spec Commercial | `/thumbnails/psp-spec-ad.webp` | [Preview](https://drive.google.com/file/d/1RvQrl3NK1TKEs98y9mal5JV5t-PORTJ2/preview) |
+| 2 | **Showreel 2026** | 2026 | Showreel | `/thumbnails/showreel-2025-26.webp` | [Preview](https://drive.google.com/file/d/1piSHy_AxPPvFcskPrgz0IUZmGgbTGptZ/preview) |
+| 3 | **Spider Noir** | 2026 | Narrative Short | `/thumbnails/spider-noir.webp` | [Preview](https://drive.google.com/file/d/1PwlJukxgLqN-vkPkrNi5eoHXEMfGP66U/preview) |
+| 4 | **Nothing Spec Ad** | 2026 | Brand Commercial | `/thumbnails/nothing-spec-ad.webp` | [Preview](https://drive.google.com/file/d/177hu5h1ZoYqXAD_vDFq1NOBU9LOuy3pG/preview) |
 
 ---
 
@@ -46,7 +46,7 @@ A production-ready, minimalist, and cinematic video portfolio website built for 
 - **Framework**: [React 19](https://react.dev/) + [Vite 8](https://vitejs.dev/)
 - **Styling**: [Tailwind CSS 3.4](https://tailwindcss.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **Typography**: Space Grotesk, Space Mono, Inter (Google Fonts)
+- **Typography**: OCR-A (Self-hosted WOFF & TTF)
 
 ---
 

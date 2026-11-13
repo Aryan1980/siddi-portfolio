@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'OCR-A';
+  src: local('OCR A Extended'),
+       local('OCR-A'),
+       local('OCRA'),
+       url('/fonts/ocr-a.woff') format('woff'),
+       url('/fonts/ocr-a.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     color-scheme: dark;
@@ -11,7 +23,7 @@
     scroll-behavior: smooth;
     background-color: #070707;
     color: #e5e5e5;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-family: 'OCR-A', 'OCR A Extended', 'OCRA', monospace;
   }
 
   body {
@@ -20,6 +32,7 @@
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: 'OCR-A', 'OCR A Extended', 'OCRA', monospace;
   }
 
   /* Custom subtle dark scrollbar */

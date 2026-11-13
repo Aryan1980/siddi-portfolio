@@ -1,18 +1,18 @@
 /**
- * Central Portfolio Configuration for Siddarth Mohan
+ * Central Portfolio Configuration for Siddharth Mohan
  * 
  * Update titles, thumbnails, and Google Drive URLs from here.
  */
 
 export const portfolioData = {
   profile: {
-    name: "SIDDARTH MOHAN",
+    name: "SIDDHARTH MOHAN",
     title: "Filmmaker & Video Editor",
-    about: "Siddarth Mohan is a filmmaker and video editor pursuing design at Chitkara Design School. His work spans commercial spec ads, narrative edits, motion design, and sound editing.",
+    about: "Siddharth Mohan is a filmmaker and video editor pursuing design at Chitkara Design School. His work spans commercial spec ads, narrative edits, motion design, and sound editing.",
     location: "India",
-    email: "siddarthmohan.film@gmail.com",
+    email: "siddharthmohan.film@gmail.com",
     links: {
-      email: "mailto:siddarthmohan.film@gmail.com",
+      email: "mailto:siddharthmohan.film@gmail.com",
       instagram: "https://instagram.com/",
       linkedin: "https://linkedin.com/",
       youtube: "https://youtube.com/",
@@ -56,7 +56,7 @@ export const portfolioData = {
     {
       id: "psp-spec-ad",
       title: "PSP Spec Ad",
-      year: "2025",
+      year: "2026",
       category: "Spec Ad",
       note: "Speculative commercial for PlayStation Portable.",
       thumbnail: "/thumbnails/psp-spec-ad.webp",
@@ -68,8 +68,8 @@ export const portfolioData = {
     },
     {
       id: "showreel-2025-26",
-      title: "Showreel 2025–26",
-      year: "2025–26",
+      title: "Showreel 2026",
+      year: "2026",
       category: "Showreel",
       note: "Selected commercial, narrative, and motion works.",
       thumbnail: "/thumbnails/showreel-2025-26.webp",
@@ -82,7 +82,7 @@ export const portfolioData = {
     {
       id: "spider-noir",
       title: "Spider Noir",
-      year: "2025",
+      year: "2026",
       category: "Narrative Short",
       note: "Short stylized comic edit and halftone visual study.",
       thumbnail: "/thumbnails/spider-noir.webp",
@@ -95,7 +95,7 @@ export const portfolioData = {
     {
       id: "nothing-spec-ad",
       title: "Nothing Spec Ad",
-      year: "2025",
+      year: "2026",
       category: "Spec Ad",
       note: "Conceptual commercial for Nothing Phone.",
       thumbnail: "/thumbnails/nothing-spec-ad.webp",

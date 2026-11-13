@@ -89,7 +89,7 @@ export default function SidebarLeft({ profile, onPlayShowreel }) {
           onClick={onPlayShowreel}
           className="w-full text-left py-2 px-3 rounded bg-neutral-900/60 hover:bg-neutral-800 text-neutral-200 border border-neutral-800 text-[11px] font-mono tracking-wider uppercase transition-colors cursor-pointer flex items-center justify-between"
         >
-          <span>▶ SHOWREEL 2025–26</span>
+          <span>▶ SHOWREEL 2026</span>
           <span className="text-neutral-500">→</span>
         </button>
       </div>

@@ -102,7 +102,7 @@ export default function App() {
                 className="text-xs uppercase tracking-widest text-neutral-400 hover:text-white border-b border-neutral-700 hover:border-white pb-0.5 transition-all cursor-pointer inline-flex items-center gap-1.5"
               >
                 <Play className="w-2 h-2 fill-current" />
-                <span>▶ REEL 2025–26</span>
+                <span>▶ REEL 2026</span>
               </button>
             </div>
 
@@ -128,7 +128,7 @@ export default function App() {
           {/* Minimal Bottom Footer */}
           <footer className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-neutral-900 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-neutral-500">
             <div>
-              <span>© 2026 SIDDARTH MOHAN</span>
+              <span>© 2026 SIDDHARTH MOHAN</span>
             </div>
             <button
               onClick={scrollToTop}
